@@ -76,6 +76,7 @@ p{
     font-weight: 24px;
     letter-spacing: 0.15;
     border-radius: 5px;
+    padding-left: 16px;
 }
 input::placeholder{
     margin-right: 10px;
@@ -87,6 +88,7 @@ input:focus{
 .radio-flex{
     display: flex;
     width: 255px;
+    justify-content: space-between;
 }
 
 button{
@@ -106,6 +108,10 @@ button{
 i{
     margin-right: 8px;
 }
+a{color: #9EA0A5;}
+#text{
+    text-decoration: none;
+}
     </style>
 </head>
 <body>
@@ -114,7 +120,7 @@ i{
             <div>
                 <div id="div1">
                     <div id="fass">
-                        <p class="go"> <a href=""><i class="fas fa-long-arrow-alt-left"></i>Go back </a></p>   
+                        <p class="go"> <a id="text" href=""><i class="fas fa-long-arrow-alt-left"></i>Go back </a></p>   
                     </div>
                     <div><p> Have an Account? <a href="">Sign in</a></p></div>
                 </div>
@@ -129,7 +135,7 @@ i{
                 <input type="password" name="" id="input-id" placeholder="Password">
                 </div>
                 <div class="radio-flex">
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="radio">
                     <p>I have read the <a href="">Terms and Conditions</a></p>
                 </div>
                 <button type="submit">SIGN UP NOW</button>
